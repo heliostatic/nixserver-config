@@ -16,7 +16,7 @@
   services.healthchecks.listenAddress =  "localhost";
   
   # healthchecks package to use.
-  services.healthchecks.package =  pkgs.healthchecks;
+  # services.healthchecks.package =  pkgs.healthchecks;
   
   # Port the server will listen on.
   services.healthchecks.port =  8000;
