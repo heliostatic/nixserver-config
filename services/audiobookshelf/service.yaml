@@ -1,0 +1,5 @@
+host: docker-host
+appdata:
+  - /var/lib/audiobookshelf
+ports:
+  - 8000:8000
