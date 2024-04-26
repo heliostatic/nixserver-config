@@ -1,5 +1,11 @@
 host: docker-host
 appdata:
   - /var/lib/uptime-kuma
+  - /var/lib/tailscale
 ports:
   - 3001:3001
+devices:
+  - /dev/net/tun:/dev/net/tun
+cap_add:
+  - net_admin
+  - sys_module

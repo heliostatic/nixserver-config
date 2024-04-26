@@ -9,4 +9,5 @@
     User = "nixserver-service";
     Group = "nixserver-service";
   };
+  services.tailscale.enable = true;
 }
