@@ -54,9 +54,9 @@
   services.healthchecks.settings.DB =  "sqlite";
   
   # Database name.
-  services.healthchecks.settings.DB_NAME =  if config.services.healthchecks.settings.DB == "sqlite"
-    then "${config.services.healthchecks.dataDir}/healthchecks.sqlite"
-  else "hc";
+  #services.healthchecks.settings.DB_NAME =  if config.services.healthchecks.settings.DB == "sqlite"
+  #  then "${config.services.healthchecks.dataDir}/healthchecks.sqlite"
+  #else "hc";
   
   # Enable debug mode.
   # services.healthchecks.settings.DEBUG =  false;
