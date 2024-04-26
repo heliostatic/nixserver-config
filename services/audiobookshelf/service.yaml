@@ -2,7 +2,7 @@ host: docker-host
 appdata:
   - /var/lib/audiobookshelf
 ports:
-  - 8000:8000
+  - 8001:8000
 devices:
   - /dev/net/tun:/dev/net/tun
 cap_add:
