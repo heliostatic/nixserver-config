@@ -22,4 +22,6 @@
   
   # Group under which Audiobookshelf runs.
   services.audiobookshelf.group = "nixserver-service";
+
+  services.tailscale.enable = true;
 }
