@@ -13,13 +13,13 @@
   services.healthchecks.dataDir = "/var/lib/healthchecks";
   
   # Address the server will listen on.
-  # services.healthchecks.listenAddress =  "localhost";
+  services.healthchecks.listenAddress =  "localhost";
   
   # healthchecks package to use.
-  # services.healthchecks.package =  pkgs.healthchecks;
+  services.healthchecks.package =  pkgs.healthchecks;
   
   # Port the server will listen on.
-  # services.healthchecks.port =  8000;
+  services.healthchecks.port =  8000;
   
   # Environment variables which are read by healthchecks `(local)_settings.py`.
   #
@@ -51,12 +51,12 @@
   # ];
   
   # Database engine to use.
-  # services.healthchecks.settings.DB =  "sqlite";
+  services.healthchecks.settings.DB =  "sqlite";
   
   # Database name.
-  # services.healthchecks.settings.DB_NAME =  if config.services.healthchecks.settings.DB == "sqlite"
-  # then "${config.services.healthchecks.dataDir}/healthchecks.sqlite"
-  # else "hc";
+  services.healthchecks.settings.DB_NAME =  if config.services.healthchecks.settings.DB == "sqlite"
+    then "${config.services.healthchecks.dataDir}/healthchecks.sqlite"
+  else "hc";
   
   # Enable debug mode.
   # services.healthchecks.settings.DEBUG =  false;
@@ -70,11 +70,11 @@
   # If you close new user registration, you can still selectively invite
   # users to your team account.
   #
-  # services.healthchecks.settings.REGISTRATION_OPEN =  false;
+  services.healthchecks.settings.REGISTRATION_OPEN =  false;
   
   # Path to a file containing the secret key.
   # Type: path
-  # services.healthchecks.settings.SECRET_KEY_FILE = null;
+  # services.healthchecks.settings.SECRET_KEY_FILE = pkgs.readSecret "healthchecks";
   
   # User account under which healthchecks runs.
   #
