@@ -1,6 +1,8 @@
 host: docker-host
 appdata:
   - /var/lib/audiobookshelf
+mount:
+  - /var/nfs/audiobooks:/audiobooks
 ports:
   - 8001:8000
 devices:
