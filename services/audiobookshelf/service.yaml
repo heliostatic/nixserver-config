@@ -1,6 +1,7 @@
 host: docker-host
 appdata:
   - /var/lib/audiobookshelf
+  - /var/lib/tailscale
 mounts:
   - /var/nfs/audiobooks:/audiobooks
 ports:

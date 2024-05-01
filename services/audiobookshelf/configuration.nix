@@ -6,7 +6,7 @@
   services.audiobookshelf.dataDir =  "audiobookshelf";
   
   # The host Audiobookshelf binds to.
-  # services.audiobookshelf.host =  "127.0.0.1";
+  services.audiobookshelf.host =  "0.0.0.0";
   
   # Open ports in the firewall for the Audiobookshelf web interface.
   # services.audiobookshelf.openFirewall =  false;
