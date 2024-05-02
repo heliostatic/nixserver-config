@@ -13,7 +13,7 @@
   services.healthchecks.dataDir = "/var/lib/healthchecks";
   
   # Address the server will listen on.
-  services.healthchecks.listenAddress =  "localhost";
+  services.healthchecks.listenAddress =  "0.0.0.0";
   
   # healthchecks package to use.
   # services.healthchecks.package =  pkgs.healthchecks;

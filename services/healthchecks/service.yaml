@@ -1,8 +1,9 @@
 host: docker-host
 appdata:
   - /var/lib/healthchecks
+  - /var/lib/tailscale
 ports:
-  - 8001:8000
+  - 8002:8000
 devices:
   - /dev/net/tun:/dev/net/tun
 cap_add:
