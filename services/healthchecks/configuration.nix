@@ -74,7 +74,7 @@
   
   # Path to a file containing the secret key.
   # Type: path
-  services.healthchecks.settings.SECRET_KEY_FILE = pkgs.writeSecret "healthchecks";
+  services.healthchecks.settings.SECRET_KEY_FILE = "${toString (pkgs.writeSecret "healthchecks")}";
   
   # User account under which healthchecks runs.
   #
