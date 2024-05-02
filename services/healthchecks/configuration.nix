@@ -1,4 +1,5 @@
-{
+{ pkgs, ... }:
+ {
   # Enable the healthchecks service
   services.healthchecks.enable = true;
   
