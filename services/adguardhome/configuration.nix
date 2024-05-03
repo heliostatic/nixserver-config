@@ -39,7 +39,7 @@
   # Declarative configurations are supplied with a default `schema_version`, `bind_host`, and `bind_port`.
   #
   # :::
-  services.adguardhome.settings = null;
+  # services.adguardhome.settings = null;
   
   # Host address to bind HTTP server to.
   services.adguardhome.settings.bind_host = "0.0.0.0";
