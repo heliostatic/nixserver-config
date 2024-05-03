@@ -1,4 +1,11 @@
+{ lib, pkgs, ... }:
 {
+    systemd.services."adguardhome".serviceConfig = {
+    DynamicUser = lib.mkForce false;
+    User = "nixserver-service";
+    Group = "nixserver-service";
+  };
+
   # Enable the adguardhome service
   services.adguardhome.enable = true;
   
