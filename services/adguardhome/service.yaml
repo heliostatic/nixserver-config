@@ -4,8 +4,6 @@ ports:
 appdata:
   - /var/lib/adguardhome
   - /var/lib/tailscale
-ports:
-  - 8001:8000
 devices:
   - /dev/net/tun:/dev/net/tun
 cap_add:
