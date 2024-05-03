@@ -1,1 +1,3 @@
 host: docker-host
+ports:
+  - 3000:3000

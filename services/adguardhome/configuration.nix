@@ -42,10 +42,10 @@
   # services.adguardhome.settings = null;
   
   # Host address to bind HTTP server to.
-  # services.adguardhome.settings.bind_host = "0.0.0.0";
+  services.adguardhome.settings.bind_host = "0.0.0.0";
   
   # Port to serve HTTP pages on.
-  # services.adguardhome.settings.bind_port = 3000;
+  services.adguardhome.settings.bind_port = 3000;
   
   # Schema version for the configuration.
   #
