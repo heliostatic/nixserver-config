@@ -17,12 +17,12 @@
   # Allow changes made on the AdGuard Home web interface to persist between
   # service restarts.
   #
-  # services.adguardhome.mutableSettings = true;
+  services.adguardhome.mutableSettings = true;
   
   # Open ports in the firewall for the AdGuard Home web interface. Does not
   # open the port needed to access the DNS resolver.
   #
-  # services.adguardhome.openFirewall = false;
+  services.adguardhome.openFirewall = true;
   
   # AdGuard Home configuration. Refer to
   # <https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration#configuration-file>
@@ -39,7 +39,7 @@
   # Declarative configurations are supplied with a default `schema_version`, `bind_host`, and `bind_port`.
   #
   # :::
-  # services.adguardhome.settings = null;
+  services.adguardhome.settings = null;
   
   # Host address to bind HTTP server to.
   services.adguardhome.settings.bind_host = "0.0.0.0";
@@ -52,4 +52,6 @@
   # Defaults to the `schema_version` supplied by `pkgs.adguardhome`.
   #
   # services.adguardhome.settings.schema_version = pkgs.adguardhome.schema_version;
+
+    services.tailscale.enable = true;
 }
