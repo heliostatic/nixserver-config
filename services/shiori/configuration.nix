@@ -9,7 +9,7 @@
   services.shiori.address = "0.0.0.0";
   
   # The Shiori package to use.
-  services.shiori.package = pkgs.shiori;
+  # services.shiori.package = pkgs.shiori;
   
   # The port of the Shiori web application
   services.shiori.port = 8080;
