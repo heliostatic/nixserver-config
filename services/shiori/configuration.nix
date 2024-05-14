@@ -6,7 +6,7 @@
   #
   # If empty, listens on all interfaces.
   #
-  # services.shiori.address = "";
+  services.shiori.address = "0.0.0.0";
   
   # The Shiori package to use.
   # services.shiori.package = pkgs.shiori;
