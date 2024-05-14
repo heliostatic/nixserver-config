@@ -15,6 +15,6 @@
   services.shiori.port = 8080;
   
   # The root of the Shiori web application
-  # services.shiori.webRoot = "/";
+  services.shiori.webRoot = "/";
     services.tailscale.enable = true;
 }
